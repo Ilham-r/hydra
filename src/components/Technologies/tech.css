@@ -1,0 +1,109 @@
+.tech__container{
+    display: flex;
+    padding: 4rem 6rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    color: #fff;
+}
+.tech__container-title{
+    background-image: url('../../assets/girl.png') ;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    width: 1060px;
+    height: 240px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.tech__container-title h1{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+}
+.tech__container-title h3{
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 42px;
+}
+.tech__container-brands_mobile{
+    display: none;
+}
+.tech__container-brands{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.tech__container-brands img:first-child{
+    width: 144px;
+    height: 144px;
+}
+.tech__container-brands img:nth-child(2){
+    width: 222px;
+    height: 222px;
+}
+.tech__container-brands img:nth-child(3){
+    width: 233px;
+    height: 233px;
+}
+.tech__container-brands img:last-child{
+    width: 252px;
+    height: 252px;
+}
+
+@media screen and (max-width:750px){ 
+.tech__container-title{               
+    width: auto;
+}
+}
+@media screen and (max-width:550px){
+.tech__container{
+    padding: 1rem;
+}
+.tech__container-title{
+    width: 420px;
+    height: 240px;
+}
+.tech__container-title h1{
+    font-size: 16px;
+    line-height: 20px;
+}
+.tech__container-title h3{
+    font-size: 24px;
+    line-height: 29px;
+}
+.tech__container-brands{
+    display: none;
+}
+.tech__container-brands_mobile{
+    display: flex;
+    position: relative;
+}
+.arrows{
+    display: flex;
+    position: absolute;
+    align-self: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+}
+.arrows img{
+    align-self: center;
+ 
+}
+.arrows:first-child{
+   left: -40px;
+}
+.arrows:last-child{
+    right: -40px;
+ }
+ }

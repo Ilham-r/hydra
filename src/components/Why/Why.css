@@ -1,0 +1,117 @@
+.why__container{
+    display: flex;
+    padding: 4rem 6rem;
+    justify-content: center;
+  
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    color: #fff;
+}
+.why__container-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+h1{
+font-family:var(--font-family);
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+margin-bottom: 0;
+
+}
+
+h6{   
+font-family: var(--font-family);
+font-weight: 300;
+font-size: 26px;
+line-height: 44px;
+margin: 0;
+}
+
+p{
+font-family: var(--font-family);
+font-weight:200;
+font-size: 14px;
+line-height: 20px;
+}
+.why__container-row_column{
+    display: flex;
+    flex-direction: column;
+   }
+   .group{
+       display: flex;
+      
+       align-items: center;
+       padding: 0;
+       margin: 0;
+       gap: 40px;
+   }
+   .group img{
+    width: 210px;
+   height: 70px;
+   }
+   .why__container-cards_container-desktop{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+   }
+   .why__container-cards_container-mobile{
+    display: none;
+   }
+   
+@media screen and (max-width:750px) {
+    .why__container-row{
+     grid-template-columns: 1fr;
+            
+    }
+ 
+     h1,h6,button,.group{
+        align-self: center;
+     }
+     .why__container-row img{ 
+        display: none;
+    }
+   
+ 
+}
+@media screen and (max-width:550px) {
+    .why__container-row p
+    {
+       display: none;
+    }
+.why__container-cards_container-desktop{
+    display: none;
+}
+.why__container-cards_container-mobile{
+    display: flex;
+    position: relative;
+
+}
+.why__container-cards_container-mobile .arrows{
+    display: flex;
+    position: absolute;
+   align-self: center;
+    width: 44px;
+height: 44px;
+
+border-radius: 50%;
+    background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+
+}
+
+.why__container-cards_container-mobile .arrows img{
+    align-self: center;
+ 
+}
+.why__container-cards_container-mobile .arrows:first-child{
+   left: -30px;
+}
+.why__container-cards_container-mobile .arrows:last-child{
+    right: -30px;
+ }
+}
